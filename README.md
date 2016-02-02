@@ -47,8 +47,8 @@ Given that the filters are dumped in `/root/DeepLearning/torch/video_classificat
 
 ```
 luajit inceptionv3.lua -i /root/DeepLearning/torch/video_classification/caffemodel/dump \
--o /root/DeepLearning/torch/video_classification/caffemodel/networks/inceptionv3.net
--b cudnn
+-o /root/DeepLearning/torch/video_classification/caffemodel/networks/inceptionv3.net \
+-b cunn
 ```
 
 The parameter `-b` sets the backend to use: `nn`, `cunn`, or `cudnn`. The produced binary Torch model will
